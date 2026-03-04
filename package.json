@@ -1,0 +1,11 @@
+{
+  "name": "ppt-folder",
+  "private": true,
+  "scripts": {
+    "build:all": "npm install && cd frontend && npm install",
+    "start": "concurrently -n backend,frontend -c blue,green \"node scripts/start-backend.js\" \"cd frontend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
